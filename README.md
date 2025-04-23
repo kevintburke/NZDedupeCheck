@@ -13,6 +13,7 @@ Process:<br />
 &bull;Compares adjacent rows on value in Identifier column (file must be sorted by Identifier to ensure matches are adjacent)<br />
 &bull;If a match is found, compares key fields (Title, Publication Date, Language Of Cataloging, Author, ISBN (Normalized), Edition, and Publisher) using fuzz.WRatio<br />
 &bull;Adds a column for Similarity, populated with the average of all comparison fields or 0 if no matching record found<br />
+&bull;Prompt user to select a directory for the output file<br />
 &bull;Saves the output as a file with a unique name using date and time<br />
 <br />
 Dependencies:<br />
