@@ -16,7 +16,7 @@ Process:<br />
 &bull;Saves the output as a file with a unique name using date and time<br />
 <br />
 Dependencies:<br />
-&bull;Pandas>br />
+&bull;Pandas<br />
 &bull;FuzzyWuzzy<br />
 &bull;NumPy<br />
 &bull;DateTime<br />
