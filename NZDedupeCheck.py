@@ -37,13 +37,15 @@ def main():
     with open(file, 'r', encoding='utf-8') as file:
         df = pd.read_csv(file)
     df.insert(17,'Similarity','0')
+    df.sort_values(by='Identifier',inplace=True)
     #Call similarity comparison on each row
     for i in range(len(df)-1):
         j = i+1
         sim = similarity(i, j, df)
     timestamp = datetime.datetime.today().strftime('%m%d%H%M')
-    df.to_csv(f'output{timestamp}.csv',index=False)
-    print(f'\nOutput saved to output{timestamp}.csv')
+    directory = filedialog.askdirectory(mustexist=True)
+    df.to_csv(f'{directory}\output{timestamp}.csv', index=False, encoding='utf-8')
+    print(f'\nOutput saved as output{timestamp}.csv!')
 
 if __name__ == "__main__":
     main()
