@@ -3,7 +3,7 @@ Checks quality of matching between records in CF NZ Dedupe Report<br />
 <br />
 Inputs:<br />
 &bull;NZ Dedupe Report in .csv <i>sorted by Identifier!</i><br />
-<i>NOTE: Requires columns for Title, Publication Date, Language Of Cataloging, Author, ISBN (Normalized), Edition, and Publisher, along with standard columns. Use KB - NZ Dedupe Report with Comparison Fields template available in NZ Analytics instance.<br />
+<i>NOTE: Requires columns for Title, Publication Date, Language Of Cataloging, Author, ISBN (Normalized), Edition, and Publisher, along with standard columns. Use KB - NZ Dedupe Report with Comparison Fields template available in NZ Analytics instance.</i><br />
 <br />
 Outputs:<br />
 &bull;Report with confidence next to all records with matching values in Identifier column<br />
